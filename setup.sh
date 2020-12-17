@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# TODO: Make the autoload and the colors vim files udateable using git!
+
 clear
 
 sudo add-apt-repository ppa:git-core/ppa
