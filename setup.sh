@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # TODO: Make the autoload and the colors vim files udateable using git!
+# TODO: Make so line 16 doesn't add the lines more than once no matter how many times this script is run!
 
 clear
 
