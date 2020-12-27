@@ -1,12 +1,8 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-
     "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-
     "copyOnSelect": false,
-
     "copyFormatting": false,
-
     "profiles":
     {
         "defaults":
@@ -45,14 +41,10 @@
             }
         ]
     },
-
     "schemes": [],
-
-    "keybindings":
+    "actions":
     [
-
         { "command": "find", "keys": "ctrl+shift+f" },
-
         { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" },
         {  "command": "toggleFocusMode", "keys": "shift+f11" }
     ]
