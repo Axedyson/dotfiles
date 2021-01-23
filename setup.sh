@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 clear
 
@@ -9,6 +9,9 @@ sudo apt update
 sudo apt install tmux
 sudo apt install neovim
 sudo apt upgrade
+sudo apt autoremove
+sudo apt clean
+sudo apt autoclean
 
 DIR=~/".vim/pack/default/start/vim-polyglot"
 if [ -d "$DIR" ]; then
