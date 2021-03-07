@@ -3,7 +3,6 @@ set shiftwidth=2
 set laststatus=0
 set nofoldenable
 set number
-set pastetoggle=<F2>
 imap <C-c> <Esc>
 if !has('nvim')
   set viminfo+=n~/.vim/viminfo
