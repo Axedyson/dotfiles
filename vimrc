@@ -8,10 +8,10 @@ if !has('nvim')
   set viminfo+=n~/.vim/viminfo
 endif
 if (has("nvim"))
-	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif
 if (has("termguicolors"))
-	set termguicolors
+  set termguicolors
 endif
 if (has("autocmd") && !has("gui_running"))
   augroup colorset
