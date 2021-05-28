@@ -4,7 +4,7 @@ set laststatus=0
 set nofoldenable
 set number
 imap <C-c> <Esc>
-if !has('nvim')
+if (!has('nvim'))
   set viminfo+=n~/.vim/viminfo
 endif
 if (has("nvim"))
