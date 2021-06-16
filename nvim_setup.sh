@@ -15,5 +15,5 @@ wget https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedar
 DIR=~/".vim/colors"
 mkdir -pv "$DIR" && mv -v onedark.vim "$DIR"
 
-cp -rv .config/ ~
+cp -Rv .config ~
 cp -v vimrc ~/.vim
