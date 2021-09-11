@@ -3,8 +3,24 @@
     "actions": 
     [
         {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+shift+c"
+        },
+        {
             "command": "find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "toggleFocusMode",
+            "keys": "shift+f11"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+shift+v"
         },
         {
             "command": 
@@ -14,10 +30,6 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "toggleFocusMode",
-            "keys": "shift+f11"
         }
     ],
     "copyFormatting": "none",
@@ -26,22 +38,14 @@
     "launchMode": "focus",
     "profiles": 
     {
-        "defaults": 
-        {
-            "acrylicOpacity": 0.80000000000000004,
-            "cursorShape": "filledBox",
-            "fontSize": 9,
-            "useAcrylic": true
-        },
+        "defaults": {},
         "list": 
         [
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "commandline": "powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Ubuntu",
-                "scrollbarState": "hidden",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "//wsl$/Ubuntu/home/anders"
+                "name": "Windows PowerShell"
             },
             {
                 "commandline": "cmd.exe",
@@ -50,16 +54,20 @@
                 "name": "Command Prompt"
             },
             {
-                "commandline": "powershell.exe",
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "acrylicOpacity": 0.80000000000000004,
+                "colorScheme": "Campbell",
+                "cursorShape": "filledBox",
+                "font": 
+                {
+                    "size": 9
+                },
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
-                "name": "Windows PowerShell"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "name": "Ubuntu",
+                "scrollbarState": "hidden",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "\\\\wsl$\\Ubuntu\\home\\anders",
+                "useAcrylic": true
             }
         ]
     },
