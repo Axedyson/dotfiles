@@ -17,3 +17,4 @@ mkdir -pv "$DIR" && mv -v onedark.vim "$DIR"
 
 cp -Rv .config ~
 cp -v vimrc ~/.vim
+

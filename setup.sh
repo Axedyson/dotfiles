@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-sudo add-apt-repository ppa:git-core/ppa
-sudo add-apt-repository ppa:neovim-ppa/stable
+sudo add-apt-repository -y ppa:git-core/ppa
+sudo add-apt-repository -y ppa:neovim-ppa/stable
 
 sudo apt update
 sudo apt install tmux
 sudo apt install neovim
-sudo apt upgrade
+sudo apt -y upgrade
 sudo apt autoremove
 sudo apt clean
 
