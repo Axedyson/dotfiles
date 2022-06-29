@@ -1,7 +1,6 @@
 [user]
 	name = AndysonDK
 	email = 28491857+AndysonDK@users.noreply.github.com
-	signingkey = 6C54DCD731F47D4D
 [pull]
 	ff = only
 [commit]
