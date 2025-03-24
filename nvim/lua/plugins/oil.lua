@@ -2,13 +2,13 @@ return {
   'stevearc/oil.nvim',
   config = function()
     require("oil").setup {
-      view_options = {
-        show_hidden = true,
-        is_always_hidden = function(name, _)
-          -- don't show parent directory in the list
-          return name == ".."
-        end
-      },
+    view_options = {
+      show_hidden = true,
+      is_always_hidden = function(name, _)
+        -- Don't show parent directory nor the .git directory
+        return name == ".." or name == ".git"
+      end
+    },
     }
     vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
   end,
