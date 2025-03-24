@@ -1,0 +1,16 @@
+cursor-style-blink = false
+cursor-style = block
+cursor-opacity = 0.6
+
+theme = Monokai Classic
+font-feature = -calt
+
+title = " "
+macos-titlebar-proxy-icon = hidden
+shell-integration-features = no-cursor
+
+
+# TODO: macos-titlebar-style
+# TODO: macos-non-native-fullscreen
+# TODO: window-decoration
+
