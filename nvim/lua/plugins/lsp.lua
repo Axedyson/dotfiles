@@ -16,7 +16,8 @@ return {
   -- Define servers here
   opts = {
     servers = {
-      lua_ls = {}
+      lua_ls = {},
+      ts_ls = {}
     }
   },
   config = function(_, opts)

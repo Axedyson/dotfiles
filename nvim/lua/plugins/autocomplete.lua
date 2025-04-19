@@ -13,7 +13,8 @@ return {
   opts = {
     signature = { enabled = true },
     completion = {
-      documentation = { auto_show = true }
+      documentation = { auto_show = true },
+      accept = { auto_brackets = { enabled = false } }
     }
   }
 }
