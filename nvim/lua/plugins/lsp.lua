@@ -17,7 +17,8 @@ return {
   opts = {
     servers = {
       lua_ls = {},
-      ts_ls = {}
+      ts_ls = {},
+      pyright = {}
     }
   },
   config = function(_, opts)
