@@ -19,7 +19,7 @@ return {
     servers = {
       lua_ls = {},
       ts_ls = {},
-      pyright = {}
+      basedpyright = {}
     }
   },
   config = function(_, opts)
