@@ -32,6 +32,7 @@ vim.opt.signcolumn = "number"
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.laststatus = 0
+vim.opt.backupcopy = "yes"
 vim.opt.wrap = false
 vim.opt.ruler = false
 vim.opt.relativenumber = true
