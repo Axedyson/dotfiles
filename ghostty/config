@@ -1,7 +1,43 @@
 shell-integration-features = no-cursor
 cursor-style-blink = false
 cursor-opacity = 0.6
+
+mouse-hide-while-typing = true
+
 theme = Monokai Classic
 font-feature = -calt
-title = " "
+
 macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = tabs
+macos-window-buttons = hidden
+
+# Can this be set to the default Ghostty font (JetBrains Mono) ? 
+# Currently I can't make it work on MacOS, maybe because this option doesn't apply on MacOS?
+window-title-font-family = Menlo
+
+window-height = 65
+window-width = 130
+
+window-padding-x = 0
+window-padding-y = 0
+
+unfocused-split-opacity = 1
+
+keybind = ctrl+space>s=new_split:down
+keybind = ctrl+space>v=new_split:right
+
+keybind = ctrl+space>h=goto_split:left
+keybind = ctrl+space>j=goto_split:down
+keybind = ctrl+space>k=goto_split:up
+keybind = ctrl+space>l=goto_split:right
+
+keybind = ctrl+space>shift+,=resize_split:left,15
+keybind = ctrl+space>shift+.=resize_split:right,15
+keybind = ctrl+space>-=resize_split:down,15
+keybind = ctrl+space>shift+==resize_split:up,15
+
+keybind = ctrl+space>shift+h=move_tab:-1
+keybind = ctrl+space>shift+l=move_tab:+1
+
+keybind = ctrl+space>[=write_screen_file:open
+keybind = ctrl+space>,=prompt_surface_title
