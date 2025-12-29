@@ -43,6 +43,7 @@ vim.opt.splitbelow = true
 vim.opt.guicursor = ""
 vim.opt.fillchars = { eob = " " }
 vim.keymap.set({ "n", "i" }, "<C-c>", "<Esc>")
+vim.keymap.set("n", "<C-w>q", "<cmd>tabclose<CR>")
 vim.keymap.set("n", "<C-s>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<C-q>", "<cmd>cprev<CR>")
 vim.api.nvim_create_autocmd('TextYankPost', {
