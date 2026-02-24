@@ -8,7 +8,8 @@ return {
       opts = {
         explorer = {
           view_mode = "tree",
-          position = "bottom"
+          position = "bottom",
+          initial_focus = "modified"
         },
         keymaps = {
           view = {
