@@ -28,17 +28,6 @@ return {
     { "<leader>gt", "<cmd>Neogit kind=tab<cr>", desc = "Show Neogit UI in a new tab" }
   },
   config = function()
-    -- local actions = require("codediff.actions")
-    --
-    -- -- Instead of g<C-x> we will just set it to <C-x>, so much easier
-    -- require("codediff").setup {
-    --   keymaps = {
-    --     view = {
-    --       { "n", "<C-x>", actions.cycle_layout, { desc = "Cycle through available layouts." } },
-    --     }
-    --   }
-    -- }
-
     require('neogit').setup {
       disable_hint = true,
       kind = "replace"
