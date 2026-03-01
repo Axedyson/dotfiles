@@ -5,6 +5,7 @@ Usage: Whenever you need to edit/work with a new language, e.g. a new programmin
   - Then define the new lsp like this in this file (init.lua): vim.lsp.enable('some_new_lsp')
   - Optionally define a dedicated language file in after/ftplugin/some_language.lua
     * Example: https://github.com/tjdevries/advent-of-nvim/blob/master/nvim/after/ftplugin/lua.lua
+    or you can extend an lsp config: vim.lsp.config('some_language', { ... })
 --]]
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -36,6 +37,7 @@ vim.opt.backupcopy = "yes"
 vim.opt.wrap = false
 vim.opt.ruler = false
 vim.opt.relativenumber = true
+vim.opt.number = true
 vim.opt.showcmd = false
 vim.opt.showmode = false
 vim.opt.splitright = true
@@ -43,7 +45,6 @@ vim.opt.splitbelow = true
 vim.opt.guicursor = ""
 vim.opt.fillchars = { eob = " " }
 vim.keymap.set({ "n", "i" }, "<C-c>", "<Esc>")
-vim.keymap.set("n", "<C-w>q", "<cmd>tabclose<CR>")
 vim.keymap.set("n", "<C-s>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<C-q>", "<cmd>cprev<CR>")
 vim.api.nvim_create_autocmd('TextYankPost', {
@@ -76,14 +77,3 @@ vim.lsp.enable('lua_ls')
 vim.lsp.enable('ts_ls')
 vim.lsp.enable('basedpyright')
 vim.lsp.enable('sourcekit')
--- delete the following settings when the neovim version is sufficient
-vim.api.nvim_create_autocmd("LspAttach", {
-  desc = "LSP Actions",
-  callback = function(args)
-    local buf = args.buf
-    local buffer_opts = { buffer = buf }
-    vim.keymap.set('n', 'grr', vim.lsp.buf.references, buffer_opts)
-    vim.keymap.set('n', 'grn', vim.lsp.buf.rename, buffer_opts)
-    vim.keymap.set('n', 'gra', vim.lsp.buf.code_action, buffer_opts)
-  end
-})

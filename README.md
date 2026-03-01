@@ -7,7 +7,10 @@
 
 #### Notes
 I hope the following gets solved, because then I need slightly less config on my side, I think:
-[] https://github.com/ghostty-org/ghostty/discussions/3866
+
+- [] https://github.com/ghostty-org/ghostty/discussions/3866
+
 Next version of ghostty will include key tables which provides a better action trigger sequence experience!:
-[] https://github.com/ghostty-org/ghostty/discussions/10068
+
+- [] https://github.com/ghostty-org/ghostty/discussions/10068
 
