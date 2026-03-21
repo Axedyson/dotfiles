@@ -1,3 +1,5 @@
+# Wish there was a way to remove the pending sequence indicator ui popup
+# https://github.com/ghostty-org/ghostty/discussions/11719
 shell-integration-features = no-cursor
 cursor-style-blink = false
 cursor-opacity = 0.6
