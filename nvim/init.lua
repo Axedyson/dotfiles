@@ -1,7 +1,6 @@
 --[[
 Usage: Whenever you need to edit/work with a new language, e.g. a new programming language or text format, do the following:
-  - Install the right language for treesitter like this :TSInstall some_language
-  - Then you want to install the right lsp for that language on your computer :h lspconfig-all
+  - Install the right lsp for that language on your computer :h lspconfig-all
   - Then define the new lsp like this in this file (init.lua): vim.lsp.enable('some_new_lsp')
   - Optionally define a dedicated language file in after/ftplugin/some_language.lua
     * Example: https://github.com/tjdevries/advent-of-nvim/blob/master/nvim/after/ftplugin/lua.lua
